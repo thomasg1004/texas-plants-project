@@ -1,22 +1,40 @@
-# React + Vite
+# Texas Plant Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Description
+Texas Plant Project (working name in progress) is a static web application that will present native species of plants per eco-region in Texas. The app will allow users to select an eco-region, and then select which type of plants to view (trees, bushes, flowers, and grass-cover). The app will list all of the species pertaining to the plant type along with information on how to raise and care for the plants. View our initial design [here](https://www.figma.com/file/83ZMMq4ScZRRF6vEQ2NBj8/The-Plant-Project?type=design&node-id=0%3A1&mode=design&t=dDONEcS1YqkIU2Aa-1).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application uses Vite + React, HTML + CSS, and Javascript to handle backend functions. 
 
-    
 
-# Install Node.js
+## Getting Started 
+Installations of various technologies will be required to contribute to the project. If you have some of these installed, you can skip to [Contributing](#-contributing) 
 
-To run project from CLI, install node.js(https://nodejs.org/en/download).  
-Run the commands:   
+
+### Installation
+- Install [Git](https://git-scm.com/downloads) to enable you to publish your contributions to our repository. 
+- Install [Node.js](https://nodejs.org/en/download) to start a developement server.
+- Any IDE of your choice that runs HTML, CSS, Javascript, and React.
+
+Ensure you have node.js installed by running the commands:
 ```
-  path/to/project/directory
-  npm install  
-  npm run dev
+npm -v
+or
+npm -version
 ```
-This will open a local server in your browser that allows you to see the changes you make in real-time. 
 
+
+## Contributing 
+Begin by cloning the repository into your desired directory.
+```
+cd /path/to/directory/
+git clone https://github.com/thomasg1004/texas-plants-project.git
+```
+Now all you have to do is open this folder in your IDE (E.g., VSCode) and begin making changes.  
+
+
+
+### Branches
+Utilize any of the existing branches or create your own branch to make changes and push those changes into that branch. Each branch dictates what portion of the application you are working on (e.g., homepage or plant-selections).
+
+If you are unfamiliar with using git to push/pull changes, [here](https://learngitbranching.js.org/) is an interactive lesson for you. Thank you to [pcottle](https://github.com/pcottle/learnGitBranching) and contributors for creating and maintaining this tutorial. 
