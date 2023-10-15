@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+    justify-content: center;
+}
+
+button, input[type="button"] {
+    background-color: #698A69;
+    border-color: #698A69;
+    color: white;
+    width: 25%;
+    border-radius: 4px;
+    font-size: 24px;
+}
