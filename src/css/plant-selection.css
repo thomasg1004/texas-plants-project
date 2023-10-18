@@ -5,21 +5,30 @@
     justify-content: center;
 }
 
-.plantButton {
-    margin-top: 3rem;
-    padding:1rem 0.5rem 1rem 0.5rem;
-    display:inline:block;
-    border-radius: 1rem;
-    margin-bottom: 3rem;    
-
+.buttonTop{margin-top: 5rem;
+}
+.plantQuestion{
+    margin-top: 2rem;
+    color: #000;
+font-family: Lora;
+font-size: 1.3rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 
 }
-
 button, input[type="button"] {
     background-color: #698A69;
     border-color: #698A69;
     color: white;
-    width: 25%;
-    border-radius: 4px;
-    font-size: 24px;
+    font-size: 1.5rem;
+    width: 15rem;
+    height: 5rem;
+    margin-top: 3rem;
+    padding:1rem 0.5rem 1rem 0.5rem;
+    display:inline: block;
+    border-radius: 1rem;
+    margin-bottom: 3rem;  
+    
+    
 }
