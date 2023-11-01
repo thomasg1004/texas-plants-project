@@ -4,6 +4,19 @@
     text-align: center;
     justify-content: center;
 }
+nav {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+li a {
+    float: center;
+    display:inline;
+    display: block;
+    width: 60px;
+  }
 
 .buttonTop{margin-top: 5rem;
 }
