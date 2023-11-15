@@ -8,6 +8,11 @@ function EcoRegions() {
     const ecoregions = ['Pineywoods', 'Gulf Prairies and Marshes', 'Post Oak Savanah', 'Blackland Prairie',
                         'Crosstimbers', 'South Texas Plains', 'Edwards Plataeu', 'Rolling Plains', 'High Plains', 'Trans-Pecos']
     
+    const toPlantSelection = () => {
+        localStorage.setItem('ecoregion', selectedEcoRegion)
+        window.location.href = '/src/pages/plant-selection.html'
+        console.log(selectedEcoRegion)
+    }
 
     return(
         <>
@@ -21,7 +26,7 @@ function EcoRegions() {
                 ))}
             </select>
             <br></br>
-            <a href='/src/pages/plant-selection.html'><button>Submit</button></a>
+            <a><button onClick={toPlantSelection}>Submit</button></a>
         </>
     )
 
