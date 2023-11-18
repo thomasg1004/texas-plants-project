@@ -1,65 +1,17 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Tooltip</title>
-        <meta cahrset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style type="text/css">
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body{
-                width: 100%;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            #tooltip{
-                position: relative;
-                cursor: pointer;
-                border-bottom: 2px dotted;
-                padding: 7px;
-                font-size: 25px;
-                font-weight: bold;
-                font-family: sans-serif;
-            }
-            #tooltipText{
-                position: absolute;
-                Left: 50%;
-                top: 0;
-                transform: translate(-50%);
-                background-color: #000;
-                color: #ffff;
-                white-space: nowrap;
-                padding: 10px 15px;
-                border-radius: 7px;
-                visibility: hidden;
-                opacity: 0;
-                transition: opacity 0.5s ease;
-            }
-            #tooltipText::before{
-                content: "";
-                position: absolute;
-                left: 50%;
-                top: 100%;
-                transform: translate(-50%);
-                border: 15px solid;
-                border-color: #000 #0000 #0000 #0000;
-            }
-            #tooltip:hover #tooltipText{
-                top: -130%;
-                visibility: visible;
-                opacity: 1;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="tooltip">
-            <span id="tooltipText">Tooltip Text</span>
-            <span>Hover Over Me</span>
-        </div>
-    </body>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, intitial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tooltips</title>
+    <link rel="stylesheet" href="/src/css/plant-details.css">
+</head>
+<body>
+    <div class="LiveOak" data-tooltip="Live Oak"></div>
+    <div class="Mesquite" data-tooltip="Mesquite"></div>
+    <div class="Huisache" data-tooltip="Huisache"></div>
+    <div class="TexasSPersimmon" data-tooltip="Texas Persimmon"></div>
+    <div class="Bluewood" data-tooltip="Bluewood"></div>
+</body>
 </html>

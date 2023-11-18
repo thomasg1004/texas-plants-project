@@ -1,46 +1,266 @@
-/* Tooltip */
-
-.tooltip {
-    width: 100px;
-    height: 100px;
+*, *::before, *::after {
+    box-sizing: border-box
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .LiveOak {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    background-image: url(./plant_southern-live-oak_600x300\ \(1\).jpg);
     background-size: cover;
+    background-position: center;
     position: relative;
-}
-
-.tooltip::before,
-.tooltip::after {
+  }
+  
+  .LiveOak::before,
+  .LiveOak::after {
     --scale: 0;
-
+    --arrow-size: 20px;
+    --tooltip-color: green;
+  
     position: absolute;
-    top: -0.25rem;
+    top: -.25rem;
     left: 50%;
-    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms transform;
     transform-origin: bottom center;
-    transition: 50ms transform;
-}
-
-.tooltip::before {
+  }
+  
+  .LiveOak::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+  
     content: attr(data-tooltip);
-    color: whitesmoke;
+    color: white;
     padding: .5rem;
     border-radius: .3rem;
     text-align: center;
     width: max-content;
     max-width: 100%;
-    background: #333;
-}
-
-.tooltip:hover::before,
-.tooltip:hover::after {
+    background: var(--tooltip-color);
+  }
+  
+  .LiveOak:hover::before,
+  .LiveOak:hover::after {
     --scale: 1;
-}
-
-.tooltip::after {
+  }
+  
+  .LiveOak::after {
+    --translate-y: calc(-1 * var(--arrow-size));
+  
     content: '';
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    border: 10px solid transparent;
-    border-top-color: black;
-}
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltip-color);
+    transform-origin: top center;
+  }
+
+  .Mesquite {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(./2006-mesquite-tree-mission-grounds-2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .Mesquite::before,
+  .Mesquite::after {
+    --scale: 0;
+    --arrow-size: 20px;
+    --tooltip-color: green;
+  
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+  }
+  
+  .Mesquite::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+  
+    content: attr(data-tooltip);
+    color: white;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    width: max-content;
+    max-width: 100%;
+    background: var(--tooltip-color);
+  }
+  
+  .Mesquite:hover::before,
+  .Mesquite:hover::after {
+    --scale: 1;
+  }
+  
+  .Mesquite::after {
+    --translate-y: calc(-1 * var(--arrow-size));
+  
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltip-color);
+    transform-origin: top center;
+  }
+
+  .Huisache {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(./growing-huisache-trees-in-southern-landscaping-beauty-and-the-beast.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .Huisache::before,
+  .Huisache::after {
+    --scale: 0;
+    --arrow-size: 20px;
+    --tooltip-color: green;
+  
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+  }
+  
+  .Huisache::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+  
+    content: attr(data-tooltip);
+    color: white;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    width: max-content;
+    max-width: 100%;
+    background: var(--tooltip-color);
+  }
+  
+  .Huisache:hover::before,
+  .Huisache:hover::after {
+    --scale: 1;
+  }
+  
+  .Huisache::after {
+    --translate-y: calc(-1 * var(--arrow-size));
+  
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltip-color);
+    transform-origin: top center;
+  }
+
+  .TexasSPersimmon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(./Texas\ Permsimmon.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .TexasSPersimmon::before,
+  .TexasSPersimmon::after {
+    --scale: 0;
+    --arrow-size: 20px;
+    --tooltip-color: green;
+  
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+  }
+  
+  .TexasSPersimmon::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+  
+    content: attr(data-tooltip);
+    color: white;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    width: max-content;
+    max-width: 100%;
+    background: var(--tooltip-color);
+  }
+  
+  .TexasSPersimmon:hover::before,
+  .TexasSPersimmon:hover::after {
+    --scale: 1;
+  }
+  
+  .TexasSPersimmon::after {
+    --translate-y: calc(-1 * var(--arrow-size));
+  
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltip-color);
+    transform-origin: top center;
+  }
+
+  .Bluewood {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(./Bluewood.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .Bluewood::before,
+  .Bluewood::after {
+    --scale: 0;
+    --arrow-size: 20px;
+    --tooltip-color: green;
+  
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: bottom center;
+  }
+  
+  .Bluewood::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+  
+    content: attr(data-tooltip);
+    color: white;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    width: max-content;
+    max-width: 100%;
+    background: var(--tooltip-color);
+  }
+  
+  .Bluewood:hover::before,
+  .Bluewood:hover::after {
+    --scale: 1;
+  }
+  
+  .Bluewood::after {
+    --translate-y: calc(-1 * var(--arrow-size));
+  
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltip-color);
+    transform-origin: top center;
+  }
