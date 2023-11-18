@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,14 +7,38 @@
         <link rel="stylesheet" type="text/css" href="/src/css/plant-selection.css">
     </head>
     <body>
-        <script></script>
+        
+        <script type="module" src="/src/PlantSelection.jsx"></script>
+
+        <div id="ecoregion"></div>
+        <!--NavBar-->
+        <header>
+            <nav>
+            <ul class = "navbar">
+                <li><a href="index.html">Eco Regions</a></li>
+                <li><a href="#./plant-selection.html">Plant Selection</a></li>
+                <li><a href="./plant-details.html">Plant Details</a></li>
+    
+            </nav>
 
         <!--BUTTONS-->
-        <h1 style="color:green;">Hello!</h1>
-        <button type="button"> Flowers </button>
+        <h1 class="plantQuestion">Select your desired plant type:</h1>
+        <a href="./plant-details.html">
+            <button class="buttonTop" type="button"> Trees </button>
+        </a>
         <br>
-        <button type="button"> Ground Cover </button>
+        <a href="/src/pages/plant-details.html">
+            <button type="button"> Bushes </button>
+        </a>
+        <br>
+        <a href="/src/pages/plant-details.html">
+            <button type="button"> Flowers </button>
+        </a>
+        <br>
+        <a href="/src/pages/plant-details.html">
+            <button type="button"> Ground Cover </button>
+        </a>
         <br>
 
-    </body>
-</html>
+    </body> 
+</html> 
